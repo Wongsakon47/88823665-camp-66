@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Workshop #HTML - FORM</title>
 </head>
 <body>
-    <p>Sawadee Test</p>
+    <h1>Workshop #HTML - FORM</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- ชื่อ -->
+        <label for="first-name">ชื่อ</label>
+        <input type="text" id="first-name" name="first-name"style="position: absolute; left: 150px; top: 80px;"><br><br>
+
+        <!-- สกุล -->
+        <label for="last-name">สกุล</label>
+        <input type="text" id="last-name" name="last-name"style="position: absolute; left: 150px; top: 120px;"><br><br>
+
+        <!-- วัน/เดือน/ปีเกิด -->
+        <label for="birthdate">วัน/เดือน/ปีเกิด</label>
+        <input type="date" id="birthdate" name="birthdate" style="position: absolute; left: 150px; top: 160px;" ><br><br>
+
+        <!-- อายุ -->
+        <label for="age">อายุ</label>
+        <input type="text" id="age" name="age" style="position: absolute; left: 150px; top: 200px;"><br><br>
+
+        <!-- เพศ -->
+        <label>เพศ</label>
+        <input type="radio" id="male" name="gender" value="male" style="position: absolute; left: 150px; top: 235px;">
+        <label for="male" style="position: absolute; left: 175px; top: 233px;">ชาย</label>
+        <input type="radio" id="female" name="gender" value="female" style="position: absolute; left: 210px; top: 235px;">
+        <label for="female" style="position: absolute; left: 235px; top: 233px;">หญิง</label><br><br>
+
+        <!-- รูป -->
+        <label for="photo">รูป &emsp;</label>
+        <input type="file" id="photo" name="photo" style="position: absolute; left: 150px; top: 270px;"><br><br>
+
+        <!-- ที่อยู่ -->
+        <label for="address">ที่อยู่</label>
+        <textarea id="address" name="address" rows="4" cols="50" style="position: absolute; left: 150px; top: 310px;"></textarea><br><br><br><br><br>
+
+        <!-- สีที่ชอบ -->
+        <label for="favorite-color">สีที่ชอบ</label>
+        <select id="favorite-color" name="favorite-color" style="position: absolute; left: 150px; top: 400px;">
+            <option value="red">แดง</option>
+            <option value="blue">น้ำเงิน</option>
+            <option value="green">เขียว</option>
+        </select><br><br>
+
+        <!-- แนวเพลงที่ชอบ -->
+        <label>แนวเพลงที่ชอบ</label> &emsp;&ensp;
+        <input type="radio" id="pop" name="music-style" value="pop">
+        <label for="pop">เพื่อชีวิต</label>
+        <input type="radio" id="classic" name="music-style" value="classic">
+        <label for="classic">ลูกทุ่ง</label>
+        <input type="radio" id="other" name="music-style" value="other">
+        <label for="other">อื่นๆ</label><br><br>
+
+        <!-- ยินยอม -->
+        <input type="checkbox" id="consent" name="consent" value="yes">
+        <label for="consent">ยินยอมให้เก็บข้อมูล</label><br><br>
+
+        <!-- ปุ่ม -->
+        <button type="reset" style="position: absolute; left: 10px; top: 520px;">Reset</button>
+        <button type="submit" style="position: absolute; left: 150px; top: 520px;">Submit</button>
+    </form>
 </body>
 </html>
