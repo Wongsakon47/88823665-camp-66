@@ -4,48 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop #HTML - FORM</title>
+    <link rel="stylesheet" href="mystyle.css"/>
+    <!-- http://localhost:8080/88823665-camp-66 -->
+    <!-- http://localhost:8080/mystyle.css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Noto+Serif+Thai:wght@100..900&display=swap" rel="stylesheet">
+     
 </head>
+<style>
+    /* internal css*/
+    h1{
+        color: red;
+    }
+    h1{
+        color: rgb(94, 147, 147);
+    }
+</style>
 <body>
     <h1>Workshop #HTML - FORM</h1>
     <form action="#" method="post" enctype="multipart/form-data">
         <!-- ชื่อ -->
         <label for="first-name">ชื่อ</label>
-        <input type="text" id="first-name" name="first-name"style="position: absolute; left: 150px; top: 80px;"><br><br>
+        <input type="text" id="first-name" name="first-name"style="position: absolute; left: 150px; top: 90px;"><br>
 
         <!-- สกุล -->
         <label for="last-name">สกุล</label>
-        <input type="text" id="last-name" name="last-name"style="position: absolute; left: 150px; top: 120px;"><br><br>
+        <input type="text" id="last-name" name="last-name"style="position: absolute; left: 150px; top: 115px;"><br>
 
         <!-- วัน/เดือน/ปีเกิด -->
         <label for="birthdate">วัน/เดือน/ปีเกิด</label>
-        <input type="date" id="birthdate" name="birthdate" style="position: absolute; left: 150px; top: 160px;" ><br><br>
+        <input type="date" id="birthdate" name="birthdate" style="position: absolute; left: 150px; top: 140px;" ><br>
 
         <!-- อายุ -->
         <label for="age">อายุ</label>
-        <input type="text" id="age" name="age" style="position: absolute; left: 150px; top: 200px;"><br><br>
+        <input type="text" id="age" name="age" style="position: absolute; left: 150px; top: 165px;"><br>
 
         <!-- เพศ -->
         <label>เพศ</label>
-        <input type="radio" id="male" name="gender" value="male" style="position: absolute; left: 150px; top: 235px;">
-        <label for="male" style="position: absolute; left: 175px; top: 233px;">ชาย</label>
-        <input type="radio" id="female" name="gender" value="female" style="position: absolute; left: 210px; top: 235px;">
-        <label for="female" style="position: absolute; left: 235px; top: 233px;">หญิง</label><br><br>
+        <input type="radio" id="male" name="gender" value="male" style="position: absolute; left: 150px; top: 195px;">
+        <label for="male" style="position: absolute; left: 175px; top: 193px;">ชาย</label>
+        <input type="radio" id="female" name="gender" value="female" style="position: absolute; left: 210px; top: 195px;">
+        <label for="female" style="position: absolute; left: 235px; top: 193px;">หญิง</label><br>
 
         <!-- รูป -->
         <label for="photo">รูป &emsp;</label>
-        <input type="file" id="photo" name="photo" style="position: absolute; left: 150px; top: 270px;"><br><br>
+        <input type="file" id="photo" name="photo" style="position: absolute; left: 150px; top: 220px;"><br>
 
         <!-- ที่อยู่ -->
         <label for="address">ที่อยู่</label>
-        <textarea id="address" name="address" rows="4" cols="50" style="position: absolute; left: 150px; top: 310px;"></textarea><br><br><br><br><br>
+        <textarea id="address" name="address" rows="4" cols="25" style="position: absolute; left: 150px; top: 250px;"></textarea><br><br><br>
 
         <!-- สีที่ชอบ -->
         <label for="favorite-color">สีที่ชอบ</label>
-        <select id="favorite-color" name="favorite-color" style="position: absolute; left: 150px; top: 400px;">
+        <select id="favorite-color" name="favorite-color" style="position: absolute; left: 150px; top: 325px;">
             <option value="red">แดง</option>
             <option value="blue">น้ำเงิน</option>
             <option value="green">เขียว</option>
-        </select><br><br>
+        </select><br>
 
         <!-- แนวเพลงที่ชอบ -->
         <label>แนวเพลงที่ชอบ</label> &emsp;&ensp;
@@ -58,11 +74,11 @@
 
         <!-- ยินยอม -->
         <input type="checkbox" id="consent" name="consent" value="yes">
-        <label for="consent">ยินยอมให้เก็บข้อมูล</label><br><br>
+        <label for="consent">ยินยอมให้เก็บข้อมูล</label><br>
 
         <!-- ปุ่ม -->
-        <button type="reset" style="position: absolute; left: 10px; top: 520px;">Reset</button>
-        <button type="submit" style="position: absolute; left: 150px; top: 520px;">Submit</button>
+        <button type="reset" style="position: absolute; left: 50px; top: 450px;">Reset</button>
+        <button type="submit" style="position: absolute; left: 200px; top: 450px;">Submit</button>
     </form>
 </body>
 </html>
