@@ -1,0 +1,103 @@
+/* mystyle.css */
+
+/* ตั้งค่าฟอนต์จาก Google Fonts */
+body{
+    font-family: "Noto Serif Thai", serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* สไตล์ของหัวข้อ */
+h1 {
+    color: #2c7a7b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1:hover {
+    background-color: #2c7a7b;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+/* ฟอร์ม */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ป้ายกำกับ (Label) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+/* ช่องป้อนข้อมูล */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* เมื่อ Active */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2b6cb0;
+    box-shadow: 0 0 5px rgba(43, 108, 176, 0.5);
+    outline: none;
+}
+
+/* ปุ่ม */
+button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 16px;
+    color: white;
+    background-color: #2b6cb0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c5282;
+}
+
+/* ปุ่ม Reset และ Submit */
+button[type="reset"] {
+    background-color: #e53e3e;
+}
+
+button[type="reset"]:hover {
+    background-color: #c53030;
+}
+
+/* ฟิลด์รูปภาพ */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* สไตล์โฮเวอร์ในฟอร์ม */
+form:hover {
+    background-color: #edf2f7;
+    transition: background-color 0.3s;
+}
