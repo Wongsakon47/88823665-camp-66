@@ -10,7 +10,7 @@ body{
 
 /* สไตล์ของหัวข้อ */
 h1 {
-    width: 500px;
+    width: 600px;
     border-style: groove;
     border-radius: 10px;
     margin: 10px auto;
@@ -31,7 +31,7 @@ h1:hover {
 
 /* Form */
 form {
-    max-width: 400px;
+    max-width: 700px auto;
     margin: 0 auto;
     background: white;
     padding: 20px;
@@ -45,7 +45,7 @@ input:focus,
 textarea:focus,
 select:focus {
     border-color: #2b6cb0;
-    outline:none;
+    outline: none;
 }
 
 /* ปุ่ม */
@@ -62,24 +62,12 @@ button {
 button[type="reset"] {
     background-color: #f54949;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 100px;
+    margin-right: 0px;
     
 }
 
 button[type="Submit"] {
     background-color: #74ed6a;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 50px;
-}
-
-/* ใส่ภาพ GIF */
-.gif-container {
-    text-align: right; /* จัดตำแหน่งภาพ */
-    margin: 20px 0; /* เพิ่มระยะห่าง */
-
-}
-
-.gif-container img {
-    max-width: 200px; /* จำกัดความกว้างสูงสุด */
-    height: auto; /* ปรับความสูงอัตโนมัติ */
+    margin-left: 0px;
 }
