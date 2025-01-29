@@ -2,16 +2,48 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\UserController;
 
-// กำหนดเส้นทางสำหรับการแสดงแบบฟอร์มและประมวลผลการส่ง
-Route::get('/mycontroller', [MyController::class, 'myfunction']);
-Route::post('/mycontroller', [MyController::class, 'myfunction']);
+Route::get('/login',
+    [LoginController::class, 'index']);
+Route::get('/register',
+    [RegisterController::class, 'index']);
+Route::post('/register',
+    [RegisterController::class, 'create']);
+Route::get('/home',
+    [HomeController::class, 'index']);
+Route::get('/',
+    [HomeController::class, 'index']);
+Route::get('/users',
+    [UserController::class, 'index']);
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('users', function ($id) {
+
+});
+Route::get('users/{id}', function ($id) {
+
+});
+Route::get('users', function ($id) {
+
+});
+
+Route::get('/mycontroller/{id?}',
+    [MyController::class, 'myfunction']);
+Route::post('/mycontroller/{id?}',
+    [MyController::class, 'MYFUNCTION']);
+
+Route::get('/error404', function (){
+    abort(404, 'Internal Not Found');
+});
+Route::get('/error500', function (){
+    abort(500, 'Internal Server Error');
 });
 
 Route::get('/hello/{id?}',
-    function($var1="") {
-    return "<h1>Hello World $var1</h1>";
+    function ($val="") {
+     return "<h1>Hello World $val</h1>";
 });
+
