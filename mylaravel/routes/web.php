@@ -17,18 +17,15 @@ Route::get('/home',
     [HomeController::class, 'index']);
 Route::get('/',
     [HomeController::class, 'index']);
+
 Route::get('/users',
     [UserController::class, 'index']);
-
-Route::get('users', function ($id) {
-
-});
-Route::get('users/{id}', function ($id) {
-
-});
-Route::get('users', function ($id) {
-
-});
+Route::get('/users/edit/{id}',
+    [UserController::class, 'edit'])->name('users.edit');
+Route::post('/users/edit',
+    [UserController::class, 'edit_action'])->name('users.update');
+Route::post('/users/delete',
+    [UserController::class, 'delete'])->name('users.delete');
 
 Route::get('/mycontroller/{id?}',
     [MyController::class, 'myfunction']);
