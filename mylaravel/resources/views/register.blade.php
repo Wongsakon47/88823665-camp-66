@@ -183,7 +183,7 @@
                 document.getElementById('register-form').submit();
 
                 setTimeout(() => {
-                    window.location.href = "{{ url('/users') }}";
+                    window.location.href = "{{ url('/login') }}";
                 }, 1000);
             });
         });

@@ -29,6 +29,7 @@
                                         class="btn btn-warning">Edit</a>
                                     <button class="btn btn-danger">Delete</button>
                                 </td>
+                                <button class="btn" onclick="myfunction()">Click Me</button>
                             </tr>
                             <?php } ?>
                         </tbody>
